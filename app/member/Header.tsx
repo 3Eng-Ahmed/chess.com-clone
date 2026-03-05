@@ -13,7 +13,7 @@ const Header = () => {
     active:true
   }
   return (
-    <div className="max-w-250 md:mx-auto mx-5 px-5 bg-[#262521] rounded-sm my-4">
+    <div className="max-w-260 md:mx-auto mx-5 px-5 bg-[#262521] rounded-sm my-4">
       <div className="border-b flex justify-between py-4">
         <div className="flex gap-8">
           {/* profile picture */}
