@@ -3,6 +3,7 @@ import Header from './Header'
 import Stats from './Stats'
 import { DailyGames } from './DailyGames'
 import { Games } from './Games'
+import { Side } from './side/Side'
 
 export const Discription = ({details}) => {
   return (
@@ -29,13 +30,18 @@ const page = () => {
   return (
     <>
       <Header/>
-      <div className="flex">
-        
+      <div className="flex flex-col md:flex-row max-w-270 md:mx-auto  px-5 gap-5 rounded-sm my-4 ">
+        <div className=''>
+          <Stats/>
+          <Discription details={details}/>
+          <DailyGames/>
+          <Games/>
+        </div>
+        <div className="min-w-66 flex-1">
+          <Side/>
+        </div>
       </div>
-      <Stats/>
-      <Discription details={details}/>
-      <DailyGames/>
-      <Games/>
+
 
     </>
   )
